@@ -1,0 +1,20 @@
+window.addEventListener('load', () => {
+  const greeting = document.getElementById('greeting');
+  const hour = new Date().getHours();
+
+  if (hour < 12) {
+    greeting.textContent = "Aziza Davlatova";
+  } else if (hour < 18) {
+    greeting.textContent = "Aziza Davlatova";
+  } else {
+    greeting.textContent = "Aziza Davlatova";
+  }
+});
+
+const profileImg = document.getElementById('profile-img');
+profileImg.addEventListener('click', () => {
+  profileImg.style.transform = 'rotate(360deg)';
+  setTimeout(() => {
+    profileImg.style.transform = 'rotate(0deg)';
+  }, 800);
+});
